@@ -1,0 +1,131 @@
+.landingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+    min-height: fit-content;
+}
+.homeHeading{
+    font-weight: 700;
+    font-size: 44px;
+}
+.lastCtaContainer{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 24px;
+    justify-content: center;
+}
+.lastCta{
+    background-image: url("../Assets/abstract-mind.svg");
+    background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto;
+    height: 35vh;
+    width: 67vw;
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: var(--background-dark);
+}
+.lastCtaHeading{
+    background-color: transparent;
+    color: var(--background-white);
+    font-size: 38px;
+    font-weight: 600;
+}
+.lastCtaSummary{
+    background-color: transparent;
+    color: var(--background-white);
+    font-size: 16px;
+    line-height: 3;
+    font-weight: 100;
+}
+.lastCtaBtn{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--background-white);
+    border-bottom: 4px solid var(--background-white);
+    display: flex;
+    flex-direction: row;
+    padding: 3px 8px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-around;
+}
+.lastCtaBtn:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 300ms;
+    border-radius: 0px;
+}
+.ctaBtnIcon{
+    background-color: transparent;
+    color: var(--text-white);
+}
+.uspContainer{
+    border: 0px solid black;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.uspAssets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.uspDoor{
+    position: relative;
+    top: 0px;
+    right: 50px;
+    height: 60vh;
+    width: 20vw;
+    background-image: url("../Assets/door.svg");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.uspBook{
+    position: relative;
+    z-index: 9;
+    top: 60px;
+    left: -250px;
+    height: 60vh;
+    width: 20vw;
+    background-image: url("../Assets/Books/500.jpg");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 2px 2px 30px;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.uspContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.uspContent{
+    margin-top: 80px;
+    width: 30vw;
+    height: fit-content;
+    word-wrap: break-word;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: .9;
+}

@@ -1,4 +1,20 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  border: 0px solid black;
+  background-color: var(--background-white);
+  color: var(--text-black);
+  font-family: neue-haas-grotesk-display,sans-serif;
+  box-sizing: border-box;
+}
+:root{
+  --background-white: #f9f5f4;
+  --background-dark: #191617;
+  --text-black: #191617;
+  --text-white: #ffffff;
+
+}
+::selection{
+  background-color: var(--background-dark);
+  color: var(--background-white);
 }
