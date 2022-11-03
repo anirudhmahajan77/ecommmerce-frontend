@@ -2,9 +2,7 @@ import React from "react";
 import styles from "../Style/Home.module.css";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-//import axios from "axios";
 import Flip from 'react-reveal/Flip';
-import sand from "../Assets/sand.jpg";
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +12,7 @@ class HomePage extends React.Component {
                     "key": 1,
                     "color": "pink",
                     "name": "Horror",
-                    "image": sand,
+                    "image": "",
                     "URI": "/book/genre/HORROR",
                 },
                 {
@@ -93,7 +91,7 @@ class HomePage extends React.Component {
                         {
                             this.state.genre.map((genre) => {
                                 return (
-                                    <div style={{backgroundImage:`url("../Assets/sand.jpg")`}}
+                                    <div
                                         className={styles.genre} key={genre.key}>
                                         <p className={styles.genreText}>{genre.name}</p>
                                     </div>
@@ -108,7 +106,7 @@ class HomePage extends React.Component {
                         <div className={styles.uspBook}></div>
                     </div>
                     <div className={styles.uspContentContainer}>
-                        <p className={styles.uspContent}>We Have Best <p className={styles.hollow}>Curated</p> Book Collection.</p>
+                        <p className={styles.uspContent}>We Have Best <span className={styles.hollow}>Curated</span> Book Collection.</p>
                     </div>
                 </div>
                 <div className={styles.lastCtaContainer}>

@@ -5,7 +5,7 @@ class Footer extends React.Component{
     render(){
         return(
             <div className={styles.footerContainer}>
-                <p className={styles.copyright}>Copyright &copy; 2022 Books & Co.</p>
+                <p className={styles.copyright}>Copyright &copy; {new Date().getFullYear()} Books & Co.</p>
             </div>
         );
     }

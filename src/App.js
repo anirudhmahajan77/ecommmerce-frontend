@@ -17,6 +17,8 @@ import AuthorPage from './Pages/AuthorPage';
 import WishlistPage from './Pages/WishlistPage';
 import SearchPage from './Pages/SearchPage';
 import CartPage from './Pages/CartPage';
+import GenrePage from './Pages/GenrePage';
+import ProductDetailPage from './Pages/ProductDetailPage';
 
 const ROLES = {
   'Admin': "[ROLE_ADMIN]",
@@ -34,8 +36,10 @@ function App() {
         <Route path="unauthorized" element={<Unauthorized />} />
         <Route path="authors" element={<AuthorPage />} />
         <Route path="/" exact element={<HomePage />} />
+        <Route path="/genre/:genre" element={<GenrePage/>} />
         <Route exact path='/search/:bookValue' element={<SearchPage />} />
-        
+        <Route path='/book/:bookId' element={<ProductDetailPage />} />
+
         {/* we want to protect these routes */}
         <Route element={<PersistLogin />}>
 

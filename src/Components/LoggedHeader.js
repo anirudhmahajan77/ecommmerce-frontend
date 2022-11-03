@@ -57,7 +57,7 @@ export default function LoggedHeader(props) {
     ).catch((err) => {
       console.log("Logged Header Error")
     })
-  });
+  },[]);
 
   const badgeStyle = {
     "& .MuiBadge-badge": {
@@ -84,7 +84,7 @@ export default function LoggedHeader(props) {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar alt="Anirudh Mahajan" src={`http://localhost:8080/api/image/${imageId}`}>{firstName.charAt(0)}</Avatar>
+            <Avatar alt={firstName} src={`${process.env.REACT_APP_LOCAL_URL}/image/${imageId}`}>{firstName.charAt(0)}</Avatar>
           </IconButton>
         </Tooltip>
         </Box>

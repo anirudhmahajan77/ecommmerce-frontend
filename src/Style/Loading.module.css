@@ -1,0 +1,22 @@
+.loadingContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+    justify-content: center;
+    height: 18em;
+}
+.loading{
+    height: 5em;
+    width: 12em;
+    background-image: url("../Assets/book.gif");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.loadingContent{
+    font-size: 44px;
+    font-weight: 500;
+    margin-top: 50px;
+}
