@@ -3,15 +3,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 40vh;
+    height: 37em;
     min-height: fit-content;
+    background-color: var(--background-white);
 }
 .homeHeading{
     font-weight: 700;
     font-size: 44px;
 }
 .lastCtaContainer{
-    height: 60vh;
+    height: 27em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,16 +22,17 @@
 .lastCta{
     background-image: url("../Assets/abstract-mind.svg");
     background-repeat: no-repeat;
-	background-position: right;
-	background-size:auto;
-    height: 35vh;
-    width: 67vw;
+	background-position:right;
+	background-size:25em;
+    height: 17em;
+    width: 64em;
     padding: 2em 5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     background-color: var(--background-dark);
+    border-radius: 12px;
 }
 .lastCtaHeading{
     background-color: transparent;
@@ -49,10 +51,11 @@
     cursor: pointer;
     background-color: transparent;
     color: var(--background-white);
-    border-bottom: 4px solid var(--background-white);
+    border: 2px solid var(--background-white);
     display: flex;
     flex-direction: row;
-    padding: 3px 8px;
+    padding: 6px 28px;
+    border-radius: 16px;
     font-weight: 500;
     align-items: center;
     justify-content: space-around;
@@ -61,7 +64,6 @@
     background-color: white;
     color: black;
     transition-duration: 300ms;
-    border-radius: 0px;
 }
 .ctaBtnIcon{
     background-color: transparent;
@@ -107,7 +109,7 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: 2px 2px 30px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
 }
 @keyframes floating {
     0% { transform: translate(0,  0px); }
@@ -122,10 +124,74 @@
 }
 .uspContent{
     margin-top: 80px;
-    width: 30vw;
+    width: 35vw;
     height: fit-content;
     word-wrap: break-word;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 80px;
     line-height: .9;
+}
+.hollow{
+    display: inline-block;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+}
+
+.genreSectionContainer{
+    background-color: var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    
+}
+.genreHeadingContainer{
+    background-color: transparent;
+}
+.genreHeading{
+    font-size: 40px;
+    text-transform:uppercase;
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--background-white)
+    
+}
+.genreHighlight{
+    display: inline-block;
+    text-transform: capitalize;
+    -webkit-transform: translate(0,-18px) rotate(-5deg);
+    transform: translate(0,-18px) rotate(-5deg);
+    background-color: var(--background-white);
+    color: var(--background-dark);
+}
+.genreSection{
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.genre{
+    width: 10vw;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: .9;
+    border: 3px dashed white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.genreText{
+    color: var(--text-white);
+    font-size: 32px;
+    background-color: transparent;
+}
+.genreText:hover{
+    text-decoration: underline;
 }

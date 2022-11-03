@@ -1,0 +1,22 @@
+.searchPageBody{
+    padding: 30px 60px;
+    min-height: 84vh;
+    max-height: fit-content;
+    background-color: var(--background-white);
+}
+.searchHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.breadcrumbLink{
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.resultContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
