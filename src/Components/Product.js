@@ -22,6 +22,9 @@ export default class Product extends Component {
     } else {
       this.setState({genre:this.props.genre});
     }
+    if(this.props.genre === "SELF_HELP"){
+      this.setState({genre: "Self Help"})
+    }
     if(this.props.discount !== 0){
       this.setState({discount: this.props.discount});
     }

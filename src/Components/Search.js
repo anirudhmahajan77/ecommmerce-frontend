@@ -46,16 +46,16 @@ function Search(props) {
 
     const updateBook = (e) => {
         setSearchValue(e.target.value)
-        if(e.target.value !== ''){
+        if (e.target.value !== '') {
             axios.get(`/book/searchbar/${e.target.value}`).then((response) => {
-            setSuggestion(response.data)
-        }).catch(() => {
-            setSuggestion([])
-        })
+                setSuggestion(response.data)
+            }).catch(() => {
+                setSuggestion([])
+            })
         } else {
             setSuggestion([])
         }
-        
+
     }
 
     return (
@@ -84,18 +84,33 @@ function Search(props) {
                     : <p className={styles.clear}></p>}
                 <p className={styles.search} onClick={searchBook}><FiSearch /></p>
             </div>
-            {suggestion.length > 0 ?
-                <div className={styles.suggestionContainer}>
-                    {suggestion.map((elem) => 
-                    { return (<div className={styles.suggestionDetails}>
-                        <img className={styles.suggestionImage} src={`${process.env.REACT_APP_LOCAL_URL}/image/${elem.imageId}`} />
-                        <p 
-                        onClick={()=>{searchThroughSuggestion(elem.id)}} 
-                        key={elem.id}
-                        className={styles.suggestion}>
-                            {elem.name}
-                        </p></div>) })}
-                </div> : null}
+            {searchValue !== '' ?
+                (suggestion.length > 0 ?
+                    <div className={styles.suggestionContainer}>
+                        {suggestion.map((elem) => {
+                            return (
+                                <div
+                                    key={elem.id}
+                                    onClick={() => { searchThroughSuggestion(elem.id) }}
+                                    className={styles.suggestionDetails}>
+                                    <img className={styles.suggestionImage} src={`${process.env.REACT_APP_LOCAL_URL}/image/${elem.imageId}`} />
+                                    <p
+
+                                        className={styles.suggestion}>
+                                        {elem.name}
+                                    </p></div>)
+                        })}
+                    </div> :
+                    <div
+                        className={styles.suggestionDetails}>
+                        <p className={styles.suggestion}>
+                            No Book Found!
+                        </p>
+                    </div>
+                )
+                : null
+            }
+
         </div>
     )
 

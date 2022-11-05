@@ -31,7 +31,7 @@ export default function SearchPage() {
       if (response.data.length !== 0) {
         //window.alert(JSON.stringify(response.data))
         setResult(response.data.result)
-        setPageLength(Math.ceil(response.data.resultLength / 9))
+        setPageLength(Math.ceil(response.data.resultLength / 6))
         setBookLength(response.data.resultLength)
         setStatus(false)
       }

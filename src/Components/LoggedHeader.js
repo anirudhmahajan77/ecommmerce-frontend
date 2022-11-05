@@ -74,7 +74,7 @@ export default function LoggedHeader(props) {
           <FiShoppingCart className={styles.menuIcon} />
         </Badge>
         </Tooltip>
-        <Typography sx={{ minWidth: 100 }}>Hi, {firstName}</Typography>
+        <Typography sx={{ minWidth: 100, marginRight:'-20px' }}>Hi, {firstName}</Typography>
         <Tooltip title="More Options">
           <IconButton
             onClick={handleClick}
