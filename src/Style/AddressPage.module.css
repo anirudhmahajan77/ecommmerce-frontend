@@ -1,0 +1,41 @@
+.addressPageBody{
+    padding: 30px 60px;
+    min-height: 84vh;
+    max-height: fit-content;
+    background-color: var(--background-white);
+}
+.addressHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.breadcrumbLink{
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.headerSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.addBtn{
+    text-decoration: none;
+    text-align: center;
+    background-color: #4BB543;
+    color: var(--background-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.icon{
+    margin-bottom: -2px;
+}
+.addressHolder{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+}

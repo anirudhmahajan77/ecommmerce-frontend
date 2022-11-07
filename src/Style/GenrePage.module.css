@@ -1,0 +1,25 @@
+.genreBody{
+    padding: 30px 60px;
+    min-height: 84vh;
+    max-height: fit-content;
+    background-color: var(--background-white);
+}
+.genreHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.breadcrumbLink{
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.resultContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 40px 40px;
+}

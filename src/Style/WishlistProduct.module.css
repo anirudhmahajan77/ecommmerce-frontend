@@ -1,0 +1,116 @@
+.wishlistProduct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 40px 30px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 70px;
+}
+.wishlistImage{
+    height: auto;
+    width: 6em;
+}
+.bookInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 10px 20px;
+}
+.bookPrice{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+.bookName{
+    font-size: x-large;
+    color: var(--text-black);
+    text-decoration: none;
+}
+.bookName:hover{
+    text-decoration:underline;
+}
+.authorName{
+    color: var(--text-black);
+    text-decoration: none;
+}
+.authorName:hover{
+    text-decoration:underline;
+}
+.stock{
+    background-color: red;
+    color: white;
+    padding: 4px 6px;
+    margin-top: 25px;
+}
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.moveToCart{
+    color:var(--background-white);
+    background-color: var(--background-dark);
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 10em;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid var(--background-dark);
+    transition: all .15s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.moveToCart:hover{
+    background-color: transparent;
+    color: var(--background-dark);
+    border: 2px solid var(--background-dark);
+}
+.outOfStock{
+    color:var(--background-dark);
+    background-color: rgb(190, 184, 184);
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 10em;
+    text-align: center;
+    cursor:not-allowed;
+    border: 2px solid var(--background-dark);
+    transition: all .15s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.deleteBtn{
+    width: 10em;
+    text-align: center;
+    cursor: pointer;
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.binIcon{
+    margin-bottom: -2px;
+}
+.price{
+    font-size: large;
+}
+.discountPrice{
+    font-size: large;
+    color: #2cba00;
+}
+.actualPrice{
+    font-size: medium;
+    color: red;
+    text-decoration:line-through;
+    margin-left: 10px;
+}

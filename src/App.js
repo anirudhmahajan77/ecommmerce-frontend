@@ -19,6 +19,9 @@ import SearchPage from './Pages/SearchPage';
 import CartPage from './Pages/CartPage';
 import GenrePage from './Pages/GenrePage';
 import ProductDetailPage from './Pages/ProductDetailPage';
+import AuthorDetailContainer from './Components/AuthorDetailContainer';
+import AddAddressPage from './Pages/AddAddressPage';
+import EditAddressPage from './Pages/EditAddressPage';
 
 const ROLES = {
   'Admin': "[ROLE_ADMIN]",
@@ -35,10 +38,13 @@ function App() {
         <Route path="shop" element={<ShopPage />} />
         <Route path="unauthorized" element={<Unauthorized />} />
         <Route path="authors" element={<AuthorPage />} />
-        <Route path="/" exact element={<HomePage />} />
         <Route path="/genre/:genre" element={<GenrePage/>} />
         <Route exact path='/search/:bookValue' element={<SearchPage />} />
         <Route path='/book/:bookId' element={<ProductDetailPage />} />
+        <Route path='/author/:authorId' element={<AuthorDetailContainer />} />
+        <Route path='/address/add' element={<AddAddressPage />} />
+        <Route path='/address/edit/:addressId' element={<EditAddressPage />} />
+        <Route path="/" exact element={<HomePage />} />
 
         {/* we want to protect these routes */}
         <Route element={<PersistLogin />}>

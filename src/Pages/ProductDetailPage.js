@@ -1,15 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../Components/Header';
+import ProductDetailsContent from '../Components/ProductDetailsContent';
 import Footer from '../Components/Footer';
+
 
 export default function ProductDetailPage() {
   const params = useParams();
-  const [bookId, setBookId] = useState(params.bookId)
+  const [bookId, setBookId] = useState(params.bookId);
+
   return (
     <div>
       <Header searchValue="" />
-      <p>{bookId}</p>
+      <ProductDetailsContent bookId={bookId} />
       <Footer />
     </div>
   )

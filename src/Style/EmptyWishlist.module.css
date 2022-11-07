@@ -1,0 +1,33 @@
+.emptyWishlistBody{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background-white);
+}
+.wishlistArt{
+    background-image: url("../Assets/wishlist.svg");
+    background-repeat: no-repeat;
+	background-position:center;
+	background-size:12em;
+    height: 12em;
+    width: 15em;
+}
+.wishlistHeading{
+    text-align: center;
+    font-size: 32px;
+    margin-top: -30px;
+}
+.wishlistMessage{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.shoppingBtn{
+    text-decoration: none;
+    color: var(--background-white);
+    background-color: #ff1616;
+    padding: 10px 30px;
+    cursor: pointer;
+}

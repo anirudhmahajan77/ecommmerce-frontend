@@ -1,0 +1,47 @@
+.addBody{
+    padding: 30px 60px;
+    min-height: 84vh;
+    max-height: fit-content;
+    background-color: var(--background-white);
+}
+.addHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.breadcrumbLink{
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.formHolder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 25em;
+    margin-top: 30px;
+}
+.inputField{
+    width: 40em;
+    margin-bottom: 40px;
+}
+.formBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.submitBtn{
+    background-color: var(--background-dark);
+    color: var(--background-white);
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.editFormBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

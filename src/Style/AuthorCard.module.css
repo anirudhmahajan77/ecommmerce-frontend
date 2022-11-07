@@ -1,0 +1,46 @@
+.authorCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid var(--background-dark);
+    border-radius: 8px;
+    margin: 30px 40px;
+    padding: 30px 50px;
+}
+.authorNameHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.authorDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bio{
+    width: 10em;
+    height: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.authorLink{
+    color: var(--background-white);
+    background-color: var(--background-dark);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid var(--background-dark);
+    border-radius: 4px;
+    transition: all .30s ease-in-out;
+}
+.authorLink:hover{
+    color: var(--background-dark);
+    background-color: transparent;
+}

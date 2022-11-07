@@ -23,7 +23,7 @@ export default class Product extends Component {
       this.setState({genre:this.props.genre});
     }
     if(this.props.genre === "SELF_HELP"){
-      this.setState({genre: "Self Help"})
+      this.setState({genre: "SELF HELP"})
     }
     if(this.props.discount !== 0){
       this.setState({discount: this.props.discount});
@@ -52,7 +52,7 @@ export default class Product extends Component {
         </div>
         <div className={styles.bookInfo}>
           <p className={styles.bookName}>{this.props.name}</p>
-          <p className={styles.authorNameContainer}>By <Link className={styles.authorName} to={"/"}>{this.state.authorFirstName} {this.state.authorLastName}</Link></p>
+          <p className={styles.authorNameContainer}>By <Link className={styles.authorName} to={`/author/${this.props.authorId}`}>{this.state.authorFirstName} {this.state.authorLastName}</Link></p>
           <Link to={`/genre/${this.props.genre}`} className={styles.bookGenre}>{this.state.genre}</Link>
           <div className={styles.priceHolder}>
           <p className={styles.newPrice}>&#8377;{(this.props.price)-((this.props.price/100) * this.props.discount)}</p>
@@ -61,7 +61,7 @@ export default class Product extends Component {
             :null}
           </div>
           <div className={styles.btnHolder}>
-            <Link to="/" className={styles.productButton}>View Details</Link>
+            <Link to={`/book/${this.props.productId}`} className={styles.productButton}>View Details</Link>
           </div>
           
         </div>

@@ -40,7 +40,6 @@ function Search(props) {
         if (reason === 'clickaway') {
             return;
         }
-
         setOpen(false);
     };
 
@@ -101,12 +100,7 @@ function Search(props) {
                                     </p></div>)
                         })}
                     </div> :
-                    <div
-                        className={styles.suggestionDetails}>
-                        <p className={styles.suggestion}>
-                            No Book Found!
-                        </p>
-                    </div>
+                    null
                 )
                 : null
             }

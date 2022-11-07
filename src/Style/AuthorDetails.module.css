@@ -1,0 +1,54 @@
+.authorBody{
+    padding: 30px 60px;
+    min-height: 84vh;
+    max-height: fit-content;
+    background-color: var(--background-white);
+}
+.searchHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.breadcrumbLink{
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.authorProfile{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+.avatar{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.authorName{
+    font-size: 30px;
+}
+.age{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.authorBio{
+    margin-top: 20px;
+    width: 70rem;
+}
+.publicationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.publicationHeading{
+    font-size: 24px;
+}
+.bookList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}

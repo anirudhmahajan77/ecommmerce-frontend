@@ -69,7 +69,7 @@ export default function LoggedHeader(props) {
   return (
     <>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-      <Tooltip title="Your Cart">
+      <Tooltip title="My Cart">
         <Badge className={styles.mainMenuIcon} onClick={() => { nav("/cart") }} sx={badgeStyle} badgeContent={cartLength} color="secondary">
           <FiShoppingCart className={styles.menuIcon} />
         </Badge>
